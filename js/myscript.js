@@ -5,6 +5,7 @@ const squareContainer = document.querySelector(".row");
 // aggiungo evento click 
 btnPlay.addEventListener ('click',
     function () {
+        squareContainer.innerHTML = '';
         // aggiungo bordo alla griglia
         squareContainer.classList.add("black-border");
         // ciclo da 100 giri
