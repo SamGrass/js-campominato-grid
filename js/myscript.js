@@ -5,13 +5,14 @@ const squareContainer = document.querySelector(".row");
 // aggiungo evento click 
 btnPlay.addEventListener ('click',
     function () {
-
+        // aggiungo bordo alla griglia
+        squareContainer.classList.add("black-border");
         // ciclo da 100 giri
         for (let i = 1; i <= 100; i++) {
             // creo un elemento "quadrato"
             let square = document.createElement("div");
             square.classList.add("square");
-            square.append([i])
+            square.append(i)
             
             // aggiungo click all'elemento per dare classe e far apparire il numero index
             square.addEventListener('click', 

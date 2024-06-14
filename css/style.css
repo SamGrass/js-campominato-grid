@@ -21,10 +21,11 @@ h1 {
 .container {
     width: 70%;
     margin: 0 auto;
-    padding: 2em;
+    padding: 1.8em;
     text-align: center;
     background-color: #dce2e2;
     border-radius: 1em;
+    margin-bottom: 2em;
     box-shadow: 0 0 1em 0.2em #000000;
 }
 
@@ -49,10 +50,13 @@ h1 {
     flex-wrap: wrap;
     margin-top: 3rem;
 }
+.row.black-border {
+    border: 2px solid #000000;
+}
 
 .square {
     width: calc(100% / 10);
-    border: 1px solid #000000;
+    border: 2px solid #000000;
     aspect-ratio: 1/1;
     display: flex;
     align-items: center;
