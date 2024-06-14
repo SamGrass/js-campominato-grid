@@ -11,13 +11,15 @@ btnPlay.addEventListener ('click',
             // creo un elemento "quadrato"
             let square = document.createElement("div");
             square.classList.add("square");
+            square.append([i])
             
             // aggiungo click all'elemento per dare classe e far apparire il numero index
             square.addEventListener('click', 
                 function () {
                     square.classList.toggle("clicked");
-
-                    console.log(square);
+                    
+                    squareText = i
+                    console.log(squareText);
                 }
             )
             console.log(square);
